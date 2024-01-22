@@ -1,1 +1,26 @@
 /* write your override styles here */
+#wall .tag-1{
+    display: none;
+}
+
+div#wall #tag-2{
+    display: none;
+}
+
+#wall .parent #tag-4 {
+    display: none;
+}
+
+/* adjacent sibling selector: meaning it selects 
+the element that comes afer the + operator, which is 
+the one below the ones that come before the + sign, and 
+they're on the same level */
+div#wall #tag-2 + #tag-3{
+    display: none 
+}
+
+/* child selectors: it selects all the elements 
+inside the wall element. */
+#wall > div {
+    display: none;
+}
